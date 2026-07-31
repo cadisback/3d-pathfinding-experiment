@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bxi52cgfdaw2m"]
+
+[ext_resource type="ArrayMesh" uid="uid://ccbhwe7l87y3w" path="res://models/Neighbor's House (Alpha 1)/Neighbor's House (Alpha 1).obj" id="1_d7po0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lns5q"]
+size = Vector3(10.51207, 0.50183105, 9.72081)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lxxjd"]
+size = Vector3(12.702293, 0.5040283, 12.475525)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4j3ah"]
+size = Vector3(4.123657, 0.5004883, 11.963875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1je8n"]
+size = Vector3(4.010498, 0.14147949, 1.9036865)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5311w"]
+size = Vector3(13.658813, 1, 12.887268)
+
+[node name="House" type="StaticBody3D" unique_id=845347094]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=563354155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75751495, -0.24908447, 4.360405)
+shape = SubResource("BoxShape3D_lns5q")
+
+[node name="Neighbor\'sHouse(alpha1)" type="MeshInstance3D" parent="." unique_id=1216770072]
+mesh = ExtResource("1_d7po0")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1326978656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8511467, -0.24798584, -1.2417297)
+shape = SubResource("BoxShape3D_lxxjd")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=312906775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3068237, -0.24975586, 5.4819374)
+shape = SubResource("BoxShape3D_4j3ah")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=473341978]
+transform = Transform3D(1, 0, 0, 0, 0.83549833, -0.54949296, 0, 0.54949296, 0.83549833, -2.3044724, -0.5813629, 12.220911)
+shape = SubResource("BoxShape3D_1je8n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=876315182]
+transform = Transform3D(1, 0, -8.742278e-08, 0, -0.00021147728, 0, 8.742278e-08, 0, 1, -5.5703735, 0, -1.1399841)
+shape = SubResource("BoxShape3D_5311w")

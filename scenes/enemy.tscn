@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://behvggsmefhnd" path="res://models/Universal Animation Library[Standard]/Unreal-Godot/UAL1_Standard.glb" id="2_4ra3w"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ii68t"]
-radius = 0.19042969
+radius = 0.064941406
 height = 1.8061523
 
 [sub_resource type="Animation" id="Animation_cxyq6"]
