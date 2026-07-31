@@ -3,9 +3,9 @@ extends CharacterBody3D
 @onready var camera = $Camera3D
 @onready var ray = $Camera3D/RayCast3D
  
-@export var walk_speed = 4.5
+@export var walk_speed = 6
 var speed = walk_speed
-@export var sprint_speed = 10
+var sprint_speed = walk_speed * 1.99
 var sensitivity: float = 0.05
 
  
@@ -37,7 +37,7 @@ func movement(delta):
 		speed = sprint_speed
 	else:
 		speed = walk_speed
-		
+	print(speed)
 	
 	var input_direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var direction := (transform.basis * Vector3(input_direction.x, 0, input_direction.y)).normalized()
