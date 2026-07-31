@@ -1,5 +1,5 @@
 extends CharacterBody3D
- 
+# hi xavieeerrrrr
 @onready var camera = $Camera3D
 @onready var ray = $Camera3D/RayCast3D
  
