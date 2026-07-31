@@ -48,5 +48,5 @@ size = Vector3(100, 1, 100)
 size = Vector3(50, 20, 1)
 
 [node name="Neighbor\'sHouse(alpha1)" type="MeshInstance3D" parent="." unique_id=2054115266]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.14795, 1.1000142, -16.085531)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.727367, 0.5055313, -16.085531)
 mesh = ExtResource("3_4wyf3")
