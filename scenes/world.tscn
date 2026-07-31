@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://djee8427l1ea"]
+
+[ext_resource type="PackedScene" uid="uid://cww7edbg5sv4t" path="res://scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://c5e0klj0mceq6" path="res://scenes/enemy.tscn" id="2_rwgxs"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nnsk1"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_rwgxs"]
+sky_material = SubResource("ProceduralSkyMaterial_nnsk1")
+
+[sub_resource type="Environment" id="Environment_4wyf3"]
+background_mode = 2
+sky = SubResource("Sky_rwgxs")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_ii68t"]
+vertices = PackedVector3Array(25.5, 0.52000046, -1, 25.75, 0.52000046, 0, 49.5, 0.52000046, 0, 49.5, 0.52000046, -49.5, -49.5, 0.52000046, 0, -25.5, 0.52000046, 0, -25.25, 0.52000046, -1, -49.5, 0.52000046, -49.5, 25.25, 0.52000046, 1.25, 49.5, 0.52000046, 49.5, -25.25, 0.52000046, 1.25, -49.5, 0.52000046, 49.5)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(0, 6, 3), PackedInt32Array(3, 6, 7), PackedInt32Array(1, 2, 8), PackedInt32Array(8, 2, 9), PackedInt32Array(5, 10, 4), PackedInt32Array(4, 10, 11), PackedInt32Array(8, 9, 10), PackedInt32Array(10, 9, 11)]
+cell_height = 0.01
+
+[node name="World" type="Node3D" unique_id=457804860]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=829006573]
+environment = SubResource("Environment_4wyf3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2139820249]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=410296988 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.740223, 1.7264011, 10.61738)
+
+[node name="Enemy" parent="." unique_id=1754447156 instance=ExtResource("2_rwgxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.55505, 0.6443627, -18.161839)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=27032906]
+navigation_mesh = SubResource("NavigationMesh_ii68t")
+
+[node name="PrototypeGroundWalls" type="CSGCombiner3D" parent="NavigationRegion3D" unique_id=1751039773]
+use_collision = true
+
+[node name="Ground" type="CSGBox3D" parent="NavigationRegion3D/PrototypeGroundWalls" unique_id=1470874333]
+size = Vector3(100, 1, 100)
+
+[node name="Wall" type="CSGBox3D" parent="NavigationRegion3D/PrototypeGroundWalls" unique_id=1940716032]
+size = Vector3(50, 20, 1)
