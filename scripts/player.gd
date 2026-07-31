@@ -1,5 +1,5 @@
 extends CharacterBody3D
-# hi xavieeerrrrr
+
 @onready var camera = $Camera3D
 @onready var ray = $Camera3D/RayCast3D
  
@@ -37,7 +37,11 @@ func movement(delta):
 		speed = sprint_speed
 	else:
 		speed = walk_speed
-	print(speed)
+	
+	if Input.is_action_pressed("crouch"):
+		$Collider.shape.height = 1
+	else:
+		$Collider.shape.height = 2
 	
 	var input_direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var direction := (transform.basis * Vector3(input_direction.x, 0, input_direction.y)).normalized()
