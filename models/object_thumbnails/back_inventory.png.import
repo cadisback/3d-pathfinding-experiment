@@ -2,24 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm8notvgfx0vj"
-path.s3tc="res://.godot/imported/hello_neighbor_-_mannequin_4.png-c9b6e5fe7e90f50340dca386bfda1685.s3tc.ctex"
+uid="uid://bmjgaiibxtia8"
+path="res://.godot/imported/back_inventory.png-aeb2470140c1bf4ed5e97ecde757df63.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "fc8ee768c12ea7f2eb1d1ad6df64c96b"
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/hello_neighbor_-_mannequin_4.png"
-dest_files=["res://.godot/imported/hello_neighbor_-_mannequin_4.png-c9b6e5fe7e90f50340dca386bfda1685.s3tc.ctex"]
+source_file="res://models/object_thumbnails/back_inventory.png"
+dest_files=["res://.godot/imported/back_inventory.png-aeb2470140c1bf4ed5e97ecde757df63.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -27,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -41,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

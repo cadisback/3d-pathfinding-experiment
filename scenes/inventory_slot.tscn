@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c0qko32wmim0i"]
+
+[ext_resource type="Texture2D" uid="uid://bmjgaiibxtia8" path="res://models/object_thumbnails/back_inventory.png" id="1_dxvxp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dycly"]
+texture = ExtResource("1_dxvxp")
+
+[node name="Slot" type="TextureButton" unique_id=612702494]
+custom_minimum_size = Vector2(120, 120)
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="." unique_id=1712672310]
+modulate = Color(1, 1, 1, 0.5921569)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dycly")

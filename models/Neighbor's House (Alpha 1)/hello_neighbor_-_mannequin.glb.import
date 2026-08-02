@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bh0p5pciennbc"
-path="res://.godot/imported/hello_neighbor_-_mannequin.glb-06a677d426ffa5431c1f42fb88ff7e34.scn"
+path="res://.godot/imported/hello_neighbor_-_mannequin.glb-2f4b47e051582d5818741641696467d1.scn"
 
 [deps]
 
-source_file="res://models/hello_neighbor_-_mannequin.glb"
-dest_files=["res://.godot/imported/hello_neighbor_-_mannequin.glb-06a677d426ffa5431c1f42fb88ff7e34.scn"]
+source_file="res://models/Neighbor's House (Alpha 1)/hello_neighbor_-_mannequin.glb"
+dest_files=["res://.godot/imported/hello_neighbor_-_mannequin.glb-2f4b47e051582d5818741641696467d1.scn"]
 
 [params]
 

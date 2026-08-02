@@ -65,7 +65,7 @@ func ray_scanning(delta):
 	if ray.is_colliding():
 		var collider = ray.get_collider()
  
-		if Input.is_action_just_pressed("interact"):
+		if Input.is_action_just_pressed(""):
 			print("It's a " + collider.name)
  
 			if collider.is_in_group("interactable"):

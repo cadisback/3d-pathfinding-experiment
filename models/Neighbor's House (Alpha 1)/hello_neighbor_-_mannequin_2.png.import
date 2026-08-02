@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hl5g7k5gyxc6"
-path.s3tc="res://.godot/imported/hello_neighbor_-_mannequin_2.png-a56b41474a12ea5a64bf047bb1444269.s3tc.ctex"
+path.s3tc="res://.godot/imported/hello_neighbor_-_mannequin_2.png-e78439c9351f978dd22f487d0a29c74f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/hello_neighbor_-_mannequin_2.png"
-dest_files=["res://.godot/imported/hello_neighbor_-_mannequin_2.png-a56b41474a12ea5a64bf047bb1444269.s3tc.ctex"]
+source_file="res://models/Neighbor's House (Alpha 1)/hello_neighbor_-_mannequin_2.png"
+dest_files=["res://.godot/imported/hello_neighbor_-_mannequin_2.png-e78439c9351f978dd22f487d0a29c74f.s3tc.ctex"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyf311jy88u16"
-path.s3tc="res://.godot/imported/hello_neighbor_-_mannequin_0.jpg-2beab106e873a2bf5ef9154c55649564.s3tc.ctex"
+uid="uid://2ep166k0qy6e"
+path.s3tc="res://.godot/imported/hello_neighbor_-_mannequin_1.jpg-17fb17fee37800b0d7b4306296f21b98.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "29d1def64d656e0d589d532306e4097d"
+"md5": "f87de094ec854bf3927e9dac83be8678"
 }
 
 [deps]
 
-source_file="res://models/hello_neighbor_-_mannequin_0.jpg"
-dest_files=["res://.godot/imported/hello_neighbor_-_mannequin_0.jpg-2beab106e873a2bf5ef9154c55649564.s3tc.ctex"]
+source_file="res://models/Neighbor's House (Alpha 1)/hello_neighbor_-_mannequin_1.jpg"
+dest_files=["res://.godot/imported/hello_neighbor_-_mannequin_1.jpg-17fb17fee37800b0d7b4306296f21b98.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cpqchprrf7isq"]
+
+[ext_resource type="PackedScene" uid="uid://cbiitw3mp7xun" path="res://door/door_animated.gltf" id="1_yfgsh"]
+
+[node name="Door" type="Node3D" unique_id=1078454081]
+
+[node name="door_animated2" parent="." unique_id=450540041 instance=ExtResource("1_yfgsh")]
+metadata/test = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="door_animated2" unique_id=1389441530]
+root_node = NodePath("../..")
+
+[editable path="door_animated2"]
