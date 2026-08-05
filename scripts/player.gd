@@ -65,9 +65,13 @@ func ray_scanning(delta):
 	if ray.is_colliding():
 		var collider = ray.get_collider()
  
-		if Input.is_action_just_pressed(""):
+		if Input.is_action_just_pressed("interact"):
 			print("It's a " + collider.name)
  
 			if collider.is_in_group("interactable"):
 				collider.interact()
+func drop_from_player(item):
+	var forward = -transform.basis.z.normalized()
+	var drop_pos = global_position + forward * 2.0
+	item.global_position = drop_pos
  

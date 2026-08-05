@@ -25,6 +25,10 @@ Inventory="*uid://dgxnqkngwhxi5"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[global_group]
+
+interactables="ITMESSS"
+
 [input]
 
 ui_left={
