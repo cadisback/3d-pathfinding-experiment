@@ -17230,7 +17230,7 @@ shape = SubResource("SeparationRayShape3D_md0e3")
 [node name="neighbour_lowpoly2" parent="." unique_id=817608102 instance=ExtResource("3_nenq2")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0.088382006)
 
-[node name="neighbour_lowpoly" parent="neighbour_lowpoly2/neighbour_lowpoly/Skeleton3D" parent_id_path=PackedInt32Array(817608102, 164389694) index="0" unique_id=1329546359]
+[node name="neighbour_lowpoly" parent="neighbour_lowpoly2/neighbour_lowpoly/Skeleton3D" parent_id_path=PackedInt32Array(817608102, 727591270) index="0" unique_id=618966264]
 mesh = SubResource("ArrayMesh_otmr2")
 
 [editable path="neighbour_lowpoly2"]

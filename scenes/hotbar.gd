@@ -20,6 +20,6 @@ func _update_hotbar():
  
 func _highlight_slot(slot_index: int):
 	for i in range(4):
-		slots[i].modulate = Color(1,1,1)
-	slots[slot_index].modulate = Color(1.5, 1.5, 1.5)
+		slots[i].modulate.a = 0.5
+	slots[slot_index].modulate.a = 1
  

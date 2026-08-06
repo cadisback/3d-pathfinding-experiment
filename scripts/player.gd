@@ -14,6 +14,7 @@ var look_y := 0.0
  
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Inventory.item_drop.connect(drop_from_player)
 	PlayerManager.player = self
  
 func _input(event):
@@ -67,9 +68,11 @@ func ray_scanning(delta):
  
 		if Input.is_action_just_pressed("interact"):
 			print("It's a " + collider.name)
- 
+			
 			if collider.is_in_group("interactable"):
+				print("INTERACTABLE :D")
 				collider.interact()
+
 func drop_from_player(item):
 	var forward = -transform.basis.z.normalized()
 	var drop_pos = global_position + forward * 2.0

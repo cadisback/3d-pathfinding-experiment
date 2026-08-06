@@ -1,8 +1,9 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://7fp6t10rdxrq"]
 
 [ext_resource type="Texture2D" uid="uid://cvtrdrel4wow8" path="res://models/object_thumbnails/Box.png" id="1_6scuw"]
+[ext_resource type="PackedScene" uid="uid://c0cgarb73ft8y" path="res://scenes/interactables.tscn" id="2_8ube5"]
 [ext_resource type="PackedScene" uid="uid://poshlgl0mm01" path="res://models/objects/box.gltf" id="2_r4g3x"]
-[ext_resource type="Script" uid="uid://ifhgwpobww1p" path="res://Itemdata.gd" id="3_8ube5"]
+[ext_resource type="Script" uid="uid://ifhgwpobww1p" path="res://scripts/Itemdata.gd" id="3_8ube5"]
 
 [resource]
 script = ExtResource("3_8ube5")

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dnjud543kpuum"]
+
+[ext_resource type="Texture2D" uid="uid://r6sxaciaicda" path="res://textures/object-textures/box/box_dif.png" id="1_jmnhv"]
+
+[resource]
+resource_name = "box_m"
+albedo_color = Color(0.58383155, 0.58383155, 0.58383155, 1)
+albedo_texture = ExtResource("1_jmnhv")
+metallic = 0.1
+roughness = 0.5

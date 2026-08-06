@@ -2,10 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://b0f3804d0essh" path="res://models/object_thumbnails/Crowbar.png" id="1_hq5t4"]
 [ext_resource type="PackedScene" uid="uid://qekom35yynj3" path="res://models/objects/crowbar.gltf" id="2_66rco"]
-[ext_resource type="Script" uid="uid://ifhgwpobww1p" path="res://Itemdata.gd" id="3_dycly"]
+[ext_resource type="PackedScene" uid="uid://c0cgarb73ft8y" path="res://scenes/interactables.tscn" id="2_dycly"]
+[ext_resource type="Script" uid="uid://ifhgwpobww1p" path="res://scripts/Itemdata.gd" id="4_66rco"]
 
 [resource]
-script = ExtResource("3_dycly")
+script = ExtResource("4_66rco")
 icon = ExtResource("1_hq5t4")
 mesh_scene = ExtResource("2_66rco")
 metadata/_custom_type_script = "uid://ifhgwpobww1p"

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c7oicojrl7hki"]
+
+[ext_resource type="Texture2D" uid="uid://c14x1lg73v7ug" path="res://textures/object-textures/crowbar/crowbar_dif.png" id="1_2toic"]
+
+[resource]
+resource_name = "crowbar_inst"
+albedo_color = Color(0.58383155, 0.58383155, 0.58383155, 1)
+albedo_texture = ExtResource("1_2toic")
+metallic = 0.1
+roughness = 0.5

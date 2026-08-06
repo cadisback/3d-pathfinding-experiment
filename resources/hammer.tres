@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bf7gesfvuvdaf"]
+
+[ext_resource type="Texture2D" uid="uid://qd85xbep3yc1" path="res://icon.svg" id="1_4ibew"]
+[ext_resource type="PackedScene" uid="uid://c0cgarb73ft8y" path="res://scenes/interactables.tscn" id="2_7vl7o"]
+[ext_resource type="Script" uid="uid://ifhgwpobww1p" path="res://scripts/Itemdata.gd" id="3_s75pi"]
+
+[resource]
+script = ExtResource("3_s75pi")
+metadata/_custom_type_script = "uid://ifhgwpobww1p"
